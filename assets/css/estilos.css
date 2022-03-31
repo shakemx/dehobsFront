@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: local("Open Sans"), url("/assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Arimo", sans-serif;
+  src: local("Arimo"), url("/assets/fonts/Arimo-Regular.ttf") format("trueType"); }
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: local("DM Sans"), url("/assets/fonts/DMSans-Medium.ttf") format("trueType"); }
+body {
+  background: #f5f5f5 !important;
+  font-family: "Arimo", sans-serif; }
+
+section,
+header {
+  overflow: hidden; }
+
+h1,
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #004aad; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+p {
+  color: #8c8d8e; }
+
+.accion {
+  border: 2px solid #5eb12f;
+  border-radius: 10px;
+  padding: 1rem 4rem;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #5eb12f; }
+
+.accion:hover {
+  border: 2px solid rgba(94, 177, 47, 0.8);
+  border-radius: 10px;
+  padding: 1.1rem 4.1rem;
+  color: #ffffff;
+  background-color: rgba(94, 177, 47, 0.8);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: #5eb12f 0px 0px 2px;
+          box-shadow: #5eb12f 0px 0px 2px;
+  text-shadow: 0px 4px 3px rgba(94, 177, 47, 0.4), 0px 8px 13px rgba(94, 177, 47, 0.1), 0px 18px 23px rgba(94, 177, 47, 0.1); }
+
+.img-nav {
+  width: auto;
+  height: 100px; }
+
+@media only screen and (max-width: 540px) {
+  .img-nav {
+    height: 55px; } }
+.nav-item:hover {
+  background: #5eb12f;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0.4; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/assets/img/menu.png") !important;
+  border-color: transparent !important;
+  border: none !important; }
+
+.navbar-toggler:focus {
+  border-color: transparent !important;
+  border: none !important;
+  -webkit-box-shadow: transparent !important;
+          box-shadow: transparent !important; }
+
+.navbar-light .navbar-toggler {
+  color: transparent !important;
+  border-color: transparent !important;
+  border: none !important; }
+
+#topscroll {
+  display: inline-block;
+  background-color: #5eb12f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#topscroll::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #f5f5f5; }
+
+#topscroll:hover {
+  cursor: pointer;
+  background-color: rgba(94, 177, 47, 0.6); }
+
+#topscroll:active {
+  background-color: rgba(94, 177, 47, 0.8); }
+
+#topscroll.show {
+  opacity: 1;
+  visibility: visible; }
+
+.hero {
+  position: relative; }
+
+.imagen-hero {
+  -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+  width: 100%;
+  height: 100vh;
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%); }
+
+.textoInicio {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.titulo {
+  font-size: 4rem; }
+
+@media only screen and (max-width: 768px) {
+  .textoInicio {
+    width: auto; } }
+#nosotros h3 {
+  color: #004aad;
+  font-size: 3rem;
+  font-family: 'DM Sans', sans-serif; }
+#nosotros ul li.dehobs::before {
+  content: "";
+  background-image: url("/assets/img/iconos/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem; }
+#nosotros li {
+  color: #8c8d8e; }
+#nosotros .img-valores {
+  width: 150px;
+  height: auto; }
+#nosotros h4 {
+  color: #004aad;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 3rem; }
+
+/*# sourceMappingURL=estilos.css.map */
