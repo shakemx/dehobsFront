@@ -434,5 +434,9 @@ footer {
     color: #ffffff;
     text-shadow: 2px 2px 4px black;
     margin: 5px 0; }
+  @media only screen and (max-width: 768px) {
+    footer .img-footer {
+      width: auto;
+      height: 50px; } }
 
 /*# sourceMappingURL=estilos.css.map */
