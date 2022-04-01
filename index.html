@@ -32,6 +32,20 @@
 
     <!-- AOS SCROLL -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_gGHZQEDHJmDEjuOwEPoep");
+      })();
+    </script>
+
+    <!-- Racaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-light bg-light p-0">
@@ -57,19 +71,22 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="#nosotros">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Aliados</a>
+            <a class="nav-link" href="#alianzas">Aliados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Casos de Éxito</a>
+            <a class="nav-link" href="#exito">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -468,34 +485,38 @@
     </section>
 
     <section id="exito">
-      <div class="container-fluid py-5 hero">
+      <div class="container-fluid py-5 hero aos-item" data-aos="fade-up"
+      data-aos-duration="1500">
         <div class="row">
           <div class="col-12 text-center my-5">
-            <h3>Casos de Éxito</h3>
-            <h5><b>
-              Hemos colaborado en distintos sectores ayudando a nuestros
-              clientes a lograr sus objetivos de negocio</b>
+            <h3>Experiencia</h3>
+            <h5>
+              
+                Hemos colaborado en distintos sectores ayudando a nuestros
+                clientes a lograr sus objetivos de negocio
             </h5>
           </div>
         </div>
         <div class="row">
           <div
             id="myCarousel"
-            class="carousel slide w-100 "
+            class="carousel slide w-100"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner " role="listbox">
+            <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <div class="row ">
+                <div class="row">
                   <div class="col-md-3 col-12 p-0 hero">
                     <img
                       src="/assets/img/home/exito1.png"
                       alt="Escuelas, Sociedades y Asociaciones Civiles, Entidades sin Fines de Lucro"
-                      class="img-servicio "
+                      class="img-servicio"
                     />
-                    <div class="carousel-caption ">
-                      <h5>Escuelas, Sociedades y Asociaciones Civiles, Entidades sin Fines de Lucro</h5>
-                      
+                    <div class="carousel-caption">
+                      <h5>
+                        Escuelas, Sociedades y Asociaciones Civiles, Entidades
+                        sin Fines de Lucro
+                      </h5>
                     </div>
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
@@ -504,9 +525,8 @@
                       alt="Cordinados e integradores"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
-                      <h5>Cordinados e Integradores</h5>
-                      
+                    <div class="carousel-caption">
+                      <h5>Coordinados e Integradores</h5>
                     </div>
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
@@ -515,9 +535,8 @@
                       alt="Farmacéutica - Medicina"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption">
                       <h5>Farmacéutica - Medicina</h5>
-                      
                     </div>
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
@@ -526,9 +545,11 @@
                       alt="Obras y proyectos de corto y largo plazo Inmuebles-Ingeniería-Arquitectura"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
-                      <h5>Obras y proyectos de corto y largo plazo Inmuebles-Ingeniería-Arquitectura</h5>
-                      
+                    <div class="carousel-caption">
+                      <h5>
+                        Obras y proyectos de corto y largo plazo
+                        Inmuebles-Ingeniería-Arquitectura
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -541,11 +562,9 @@
                       alt="Literatura - Psicología - Pedagogía"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption">
                       <h5>Literatura - Psicología - Pedagogía</h5>
-                      
                     </div>
-
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
                     <img
@@ -553,9 +572,8 @@
                       alt="Sector Primario, Régimenes Especiales"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption">
                       <h5>Sector Primario, Régimenes Especiale</h5>
-                      
                     </div>
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
@@ -564,9 +582,8 @@
                       alt="Aeronáuticaa - Espacial"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption">
                       <h5>Aeronáutica - Espacial</h5>
-                      
                     </div>
                   </div>
                   <div class="col-md-3 col-12 p-0 hero">
@@ -575,9 +592,8 @@
                       alt="Sociedades Financieras"
                       class="img-servicio"
                     />
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption">
                       <h5>Sociedades Financieras</h5>
-                      
                     </div>
                   </div>
                 </div>
@@ -585,7 +601,7 @@
             </div>
           </div>
         </div>
-        <div class="row controles  mx-auto">
+        <div class="row controles mx-auto">
           <div class="col-6">
             <a
               class="carousel-control-icon"
@@ -607,6 +623,110 @@
               <span class="fa fa-chevron-right fa-3x"></span>
               <span class="visually-hidden">Next</span>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonios">
+      <div class="container aos-item"  data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <h3>Nuestros Clientes Opinan</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <img
+                  src="/assets/img/testimonios/testimonio1.png"
+                  alt="Testimonios DEHOBS"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <h6>Confiables y Empáticos</h6>
+                <small>Giselle Ruíz</small>
+                <br />
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>
+                  Mi negocio tuvo problemas económicos derivados de la pandemia,
+                  su socio fundador me brindó alternativas que nos permitieron
+                  encontrar estabilidad en los peores momentos. Actualmente
+                  todas las decisiones de expansión las consultamos con Dehobs y
+                  nos brindan una visión de futuro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <img
+                  src="/assets/img/testimonios/testimonio2.png"
+                  alt="Testimonios DEHOBS"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <h6>Seguridad y Marco Legal</h6>
+                <small>Eric Estrada</small>
+                <br />
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>
+                  En el pasado la empresa se enfrentó a una vulnerabilidad en
+                  sus estructura fiscal, fue requerida por instituciones
+                  públicas para ser auditada, la certera asesoría del Maestro
+                  Enrique Reyes nos brindó una solución que nos permitió
+                  encontrar una salida dentro del marco legal sin un costo por
+                  multas y recargos a nuestro requerimiento.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <img
+                  src="/assets/img/testimonios/testimonio3.png"
+                  alt="Testimonios DEHOBS"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <h6>Networking y Alianzas</h6>
+                <small>Fernando Luján</small>
+                <br />
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p>
+                  Desde que iniciamos nuestra alianza con Dehobs, nos dieron
+                  acceso a su red de aliados. Gracias a su red hemos podido
+                  acceder a nuevos clientes y oportunidades. En la empresa hemos
+                  recomendado el trabajo, expertise y profesionalismo a nuestros
+                  amigos, partners y clientes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -637,103 +757,228 @@
                 <span class="accion">Contáctanos ahora</span>
               </h6>
             </a>
-            <h5>
-              Estamos listos para ayudarte
-            </h5>
+            <h5>Estamos listos para ayudarte</h5>
           </div>
         </div>
       </div>
     </section>
-    <section id="testimonios">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center my-5">
-            <h3>Nuestros Clientes Opinan</h3>
-            
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <img src="/assets/img/testimonios/testimonio1.png" alt="Testimonios DEHOBS" class="img-fluid">
-              </div>
-              <div class="col-6">
-                <h6>Confiables y empáticos</h6>
-                <small>Giselle Ruíz</small>
-                <br>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <p>Mi negocio tuvo problemas económicos derivados de la pandemia, su socio fundador me brindó alternativas que nos permitieron
-                  encontrar estabilidad en los peores momentos. Actualmente todas las decisiones de expansión las consultamos con Dehobs y nos brindan
-                  una visión de futuro.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <img src="/assets/img/testimonios/testimonio2.png" alt="Testimonios DEHOBS" class="img-fluid">
-              </div>
-              <div class="col-6">
-                <h6>Seguridad y Marco Legal</h6>
-                <small>Eric Estrada</small>
-                <br>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <p>En el pasado la empresa se enfrentó a una vulnerabilidad en sus estructura fiscal, fue requerida por instituciones
-                  públicas para ser auditada, la certera asesoría del Maestro Enrique Reyes nos brindó una solución que nos permitió encontrar una salida
-                  dentro del marco legal sin un costo por multas y recargos a nuestro requerimiento
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="row align-items-center">
-              <div class="col-6">
-                <img src="/assets/img/testimonios/testimonio3.png" alt="Testimonios DEHOBS" class="img-fluid">
-              </div>
-              <div class="col-6">
-                <h6>Networking y Alianzas</h6>
-                <small>Fernando Luján</small>
-                <br>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <p>Desde que iniciamos nuestra alianza con Dehobs, nos dieron acceso a su red de aliados. Gracias a su red hemos podido acceder a 
-                  nuevos clientes y oportunidades. En la empresa hemos recomendado el trabajo, expertise y profesionalismo a nuestros amigos, partners
-                  y clientes.
-                 </p>
+
+
+    <section id="contacto">
+      <div class="container-fluid">
+        <div class="container aos-itemr"  data-aos="fade-up"
+        data-aos-duration="1500">
+          <div class="row">
+            <div class="col-12 text-center my-5">
+              <h3>Contacto</h3>
+              <div class="col-12 mt-5">
+                <form class="row g-3 needs-validation" id="formularioContacto">
+                  <div class="col-md-12 col-lg-6">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre_contacto"
+                        placeholder="Nombre Completo"
+                        aria-label="Nombre Completo"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="correo_contacto"
+                        placeholder="Email"
+                        aria-label="Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                      </div>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefono_contacto"
+                        placeholder="Teléfono"
+                        aria-label="Teléfono"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <select id="asunto_contacto" class="form-select" required>
+                      <option value="" selected>
+                        ¿Cúal es el servicio que buscas?
+                      </option>
+                      <option value="Administración">Administración</option>
+                      <option value="Consultoría">Consultoría</option>
+                      <option value="Contabilidad">Contabilidad</option>
+                      <option value="Fiscal">Fiscal</option>
+                      <option value="Traducción">Traducción</option>
+                      <option value="Trámites y Gestión">
+                        Trámites y Gestión
+                      </option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                    <select id="medio_contacto" class="form-select" required>
+                      <option value="" selected>¿Cómo te contactaremos?</option>
+                      <option value="Correo Electrónico">
+                        Correo Electrónico
+                      </option>
+                      <option value="Llamada Teléfonica">
+                        Llamada Teléfonica
+                      </option>
+                      <option value="Mensaje Whatsapp">Mensaje Whatsapp</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      id="mensaje_contacto"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Escribe tu mensaje"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <!-- Site key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+                  Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe -->
+
+                    <div
+                      class="g-recaptcha"
+                      data-sitekey="6Ldg9zcfAAAAAHZueAEbuXHoasnfPESJQfjX2skV"
+                      required
+                    ></div>
+                    <button type="submit" class="col-12 btn btn-primary">
+                      Enviar Mensaje
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div
+      class="modal fade"
+      id="modalGracias"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalGraciasLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title mx-auto ok" id="modalGraciasLabel">
+              ¡Gracias!
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <p>
+              Hemos recibido tu mensaje, nos comunicaremos contigo en breve.
+            </p>
+            <img
+              src="/assets/img/logoDark.png"
+              class="img-modal"
+              alt="Logo Shake"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div
+      class="modal fade"
+      id="modalError"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalErrorLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title mx-auto error" id="modalErrorLabel">
+              ¡Ha ocurrido un error!
+            </h5>
+          </div>
+          <div class="modal-body text-center">
+            <p>El mensaje no ha sido enviado, por favor intenta más tarde.</p>
+            <img
+              src="/assets/img/logoDark.png"
+              class="img-modal"
+              alt="Logo Shake"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Fin Modal -->
     </section>
 
     <footer>
       <div class="container-fluid py-5">
+        <div class="container">
         <div class="row t-">
-          <div class="col-12 col-md-4">
-            <img src="/assets/img/logo.png" alt="Logo DEHOBS" class="img-footer">
-            <h5>Deho Business Solutions</h5>
+          <div class="col-12 col-md-6">
+            <img
+              src="/assets/img/logo.png"
+              alt="Logo DEHOBS"
+              class="img-footer"
+            />
+            <h5>DEHO Business Solutions</h5>
+            <br />
+            <p>
+              <i class="fas fa-quote-left"></i>
+              Tenemos experiencias en situaciones de crisis económicas y cómo
+              superarlas. Mejoramos cualquier precio de nuestra competencia,
+              porque sabemos la importancia que representa tu negocio y compañía
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="img-footer">
+              <h3>Comunícate con Nosotros</h3>
+            </div>
+            <p>
+              <i class="fa-solid fa-envelope"></i>administracion@dehobs.com.mx
+            </p>
+            <p><i class="fa-solid fa-mobile-screen"></i>(55) 2256 8550</p>
+            <p><i class="fa-solid fa-phone-flip"></i>(55) 2256 8550</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Ciudad de México, Estado de México, Querétaro, Puebla
+            </p>
+            <p>
+              <i class="fa-brands fa-facebook-square"></i>DEHO-Business-Solutions
+            </p>
           </div>
         </div>
-
+      </div>
       </div>
     </footer>
 
+    <!-- Check main.js for sendmail function -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

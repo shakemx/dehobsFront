@@ -91,8 +91,8 @@ p {
 #topscroll {
   display: inline-block;
   background-color: #5eb12f;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 15px;
   position: fixed;
@@ -109,7 +109,7 @@ p {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 50px;
   color: #f5f5f5; }
 
@@ -425,18 +425,50 @@ p {
   padding: 0 2px;
   margin: 0 1px; }
 
-footer {
+#contacto h3 {
+  color: #004aad;
+  font-size: 3rem;
+  font-family: "DM Sans", sans-serif; }
+#contacto .input-group-text {
+  color: #ffffff;
   background-color: #5eb12f; }
+#contacto .form-select {
+  text-align: center;
+  color: #8c8d8e;
+  text-shadow: unset; }
+#contacto input {
+  color: #8c8d8e;
+  text-shadow: unset; }
+#contacto .btn-primary {
+  color: #ffffff;
+  background-color: #5eb12f;
+  border-color: #5eb12f; }
+
+footer {
+  background-color: #F8F9FA;
+  border-top: 1px solid rgba(94, 177, 47, 0.1); }
   footer .img-footer {
     width: auto;
-    height: 100px; }
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle; }
+  footer h3 {
+    color: #004aad;
+    margin: 5px 0; }
   footer h5 {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px black;
+    color: #8c8d8e;
     margin: 5px 0; }
   @media only screen and (max-width: 768px) {
     footer .img-footer {
       width: auto;
       height: 50px; } }
+  footer p {
+    color: #8c8d8e;
+    margin: 5px 0; }
+  footer svg, footer i {
+    color: rgba(94, 177, 47, 0.6);
+    margin: 0 10px;
+    width: 1.5rem;
+    text-align: center; }
 
 /*# sourceMappingURL=estilos.css.map */

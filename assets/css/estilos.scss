@@ -129,8 +129,8 @@ p {
 #topscroll {
   display: inline-block;
   background-color: $primario;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 15px;
   position: fixed;
@@ -146,7 +146,7 @@ p {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 50px;
   color: $background;
 }
@@ -588,7 +588,31 @@ p {
 // Sección Contacto
 //---------------------------------------
 
-
+#contacto{
+  h3 {
+    color: $secundario;
+    font-size: 3rem;
+    font-family: "DM Sans", sans-serif;
+  }
+  .input-group-text {
+    color: $blanco;
+    background-color: $primario;
+}
+ .form-select {
+  text-align: center;
+  color: $texto;
+  text-shadow: unset;
+}
+input{
+  color: $texto;
+  text-shadow: unset;
+}
+.btn-primary {
+  color: $blanco;
+  background-color: $primario;
+  border-color: $primario;
+}
+}
 
 
 
@@ -597,14 +621,20 @@ p {
 //---------------------------------------
 
 footer{
-  background-color: $primario;
+  background-color: #F8F9FA;
+  border-top: 1px solid rgba($color: $primario, $alpha: 0.1);
   .img-footer{
     width: auto;
     height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h3{
+    color: $secundario;
+    margin: 5px 0;
   }
   h5{
-    color: $blanco;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 45%);
+    color: $texto;
     margin: 5px 0;
   }
   @media only screen and (max-width: 768px) {
@@ -612,6 +642,16 @@ footer{
       width: auto;
       height: 50px;
     }
+  }
+  p{
+    color: $texto;
+    margin: 5px 0;
+  }
+  svg, i{
+    color: rgba($color: $primario, $alpha: 0.6);
+    margin: 0 10px;
+    width: 1.5rem;
+    text-align: center;
   }
 }
 
