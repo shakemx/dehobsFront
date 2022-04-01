@@ -66,7 +66,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse text-center" id="listaNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" data-bs-dismiss="collapse">
           <li class="nav-item">
             <a class="nav-link" href="#">Inicio</a>
           </li>
@@ -236,7 +236,7 @@
     <section id="servicios">
       <div class="container-fluid py-5">
         <div class="row align-items-center">
-          <div class="col-12 text-center mb-5">
+          <div class="col-12 text-center my-5">
             <h3>Servicios</h3>
           </div>
           <div
@@ -257,9 +257,9 @@
           >
             <h4>Contabilidad</h4>
             <p>
-              Contabilidad General y cumplimiento fiscal de cualquier actividad
-              económica para personas físicas (desde $1,500 mensuales) o
-              morales(desde $3,000 mensuales)
+              Contabilidad general y cumplimiento fiscal de cualquier actividad
+              económica para personas físicas desde $1,500 mensuales o morales
+              desde $3,000 mensuales
             </p>
           </div>
         </div>
@@ -300,7 +300,7 @@
             <h4>Admninistración</h4>
             <p>
               Capacitación Integral, Coaching empresarial y personal, RRHH en
-              general. Administración - Planeación - Control -Dirección
+              general. Administración - Planeación - Control - Dirección
             </p>
           </div>
         </div>
@@ -319,9 +319,9 @@
           <div class="col-12 col-md-6 p-0 order-md-1 text-end">
             <h4>Trámites y Gestión</h4>
             <p>
-              Tramites y gestión fiscal on line o presencial ante SAT+ADUANAS+
-              IMSS+ INFONAVIT+ Impuesto sobre Nómina+ en general impuestos
-              Locales desde $500
+              Tramites y gestión fiscal on line o presencial ante SAT + ADUANAS
+              + IMSS+ INFONAVIT+ Impuesto sobre Nómina+ en general impuestos
+              locales desde $500
             </p>
           </div>
         </div>
@@ -361,14 +361,15 @@
             <h4>Consultoría</h4>
             <ul class="px-0">
               <li class="dehobs">
-                Invertir tus utilidades de manera productiva a corto y largo
-                plazo
+                Consultoría en estructuras administrativas, fiscales y
+                 financieras de cualquier actividad económica profesional y/o empresarial para Personas 
+                 Físicas desde $500 o morales desde $3,500
               </li>
               <li class="dehobs">
-                Generar tus costos y gastos efectivos para tu empresa o proyecto
+                Opinión y sugerencia centralizada a cuestionamientos particulares fiscales, laborales, comercio exterior, seguros y fianzas desde $500
               </li>
               <li class="dehobs">
-                Pagar los impuestos correspondientes con base legal
+                Dictamen financiero, fiscal, IMSS, INFONAVIT, Impuestos Locales, declaraciones especiales ofrecemos precio base a entrevista previa con el prospecto a cliente
               </li>
             </ul>
           </div>
@@ -378,7 +379,7 @@
     <section id="alianzas">
       <div class="container pt-5">
         <div class="row">
-          <div class="col-12 text-center mb-3">
+          <div class="col-12 text-center my-5">
             <h3>Alianzas</h3>
           </div>
         </div>
@@ -485,15 +486,17 @@
     </section>
 
     <section id="exito">
-      <div class="container-fluid py-5 hero aos-item" data-aos="fade-up"
-      data-aos-duration="1500">
+      <div
+        class="container-fluid py-5 hero aos-item"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div class="row">
           <div class="col-12 text-center my-5">
             <h3>Experiencia</h3>
             <h5>
-              
-                Hemos colaborado en distintos sectores ayudando a nuestros
-                clientes a lograr sus objetivos de negocio
+              Hemos colaborado en distintos sectores ayudando a nuestros
+              clientes a lograr sus objetivos de negocio
             </h5>
           </div>
         </div>
@@ -628,8 +631,11 @@
       </div>
     </section>
     <section id="testimonios">
-      <div class="container aos-item"  data-aos="fade-up"
-      data-aos-duration="1500">
+      <div
+        class="container py-5 aos-item"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div class="row">
           <div class="col-12 text-center my-5">
             <h3>Nuestros Clientes Opinan</h3>
@@ -763,11 +769,13 @@
       </div>
     </section>
 
-
-    <section id="contacto">
-      <div class="container-fluid">
-        <div class="container aos-itemr"  data-aos="fade-up"
-        data-aos-duration="1500">
+    <section id="contacto" class="contact">
+      <div class="container-fluid py-5">
+        <div
+          class="container aos-itemr"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div class="row">
             <div class="col-12 text-center my-5">
               <h3>Contacto</h3>
@@ -877,100 +885,137 @@
       </div>
       <!-- Modal -->
       <div
-      class="modal fade"
-      id="modalGracias"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalGraciasLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title mx-auto ok" id="modalGraciasLabel">
-              ¡Gracias!
-            </h5>
-          </div>
-          <div class="modal-body text-center">
-            <p>
-              Hemos recibido tu mensaje, nos comunicaremos contigo en breve.
-            </p>
-            <img
-              src="/assets/img/logoDark.png"
-              class="img-modal"
-              alt="Logo Shake"
-            />
+        class="modal fade"
+        id="modalGracias"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalGraciasLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mx-auto ok" id="modalGraciasLabel">
+                ¡Gracias!
+              </h5>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                Hemos recibido tu mensaje, nos comunicaremos contigo en breve.
+              </p>
+              <img
+                src="/assets/img/logo.png"
+                class="img-modal"
+                alt="Logo DEHOBS"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="modal fade"
-      id="modalError"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalErrorLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title mx-auto error" id="modalErrorLabel">
-              ¡Ha ocurrido un error!
-            </h5>
-          </div>
-          <div class="modal-body text-center">
-            <p>El mensaje no ha sido enviado, por favor intenta más tarde.</p>
-            <img
-              src="/assets/img/logoDark.png"
-              class="img-modal"
-              alt="Logo Shake"
-            />
+      <div
+        class="modal fade"
+        id="modalError"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalErrorLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mx-auto error" id="modalErrorLabel">
+                ¡Ha ocurrido un error!
+              </h5>
+            </div>
+            <div class="modal-body text-center">
+              <p>El mensaje no ha sido enviado, por favor intenta más tarde.</p>
+              <img
+                src="/assets/img/logo.png"
+                class="img-modal"
+                alt="Logo DEHOBS"
+              />
+            </div>
           </div>
         </div>
       </div>
-      <!-- Fin Modal -->
     </section>
 
     <footer>
       <div class="container-fluid py-5">
         <div class="container">
-        <div class="row t-">
-          <div class="col-12 col-md-6">
-            <img
-              src="/assets/img/logo.png"
-              alt="Logo DEHOBS"
-              class="img-footer"
-            />
-            <h5>DEHO Business Solutions</h5>
-            <br />
-            <p>
-              <i class="fas fa-quote-left"></i>
-              Tenemos experiencias en situaciones de crisis económicas y cómo
-              superarlas. Mejoramos cualquier precio de nuestra competencia,
-              porque sabemos la importancia que representa tu negocio y compañía
-              <i class="fas fa-quote-right"></i>
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="img-footer">
-              <h3>Comunícate con Nosotros</h3>
+          <div class="row t-">
+            <div class="col-12 col-md-6">
+              <a href="#">
+              <img
+                src="/assets/img/logo.png"
+                alt="Logo DEHOBS"
+                class="img-footer"
+              />
+            </a>
+              <h5>DEHO Business Solutions</h5>
+              <br />
+              <p>
+                <i class="fas fa-quote-left"></i>
+                Tenemos experiencias en situaciones de crisis económicas y cómo
+                superarlas. Mejoramos cualquier precio de nuestra competencia,
+                porque sabemos la importancia que representa tu negocio y
+                compañía
+                <i class="fas fa-quote-right"></i>
+              </p>
             </div>
-            <p>
-              <i class="fa-solid fa-envelope"></i>administracion@dehobs.com.mx
-            </p>
-            <p><i class="fa-solid fa-mobile-screen"></i>(55) 2256 8550</p>
-            <p><i class="fa-solid fa-phone-flip"></i>(55) 2256 8550</p>
-            <p>
-              <i class="fa-solid fa-location-dot"></i>Ciudad de México, Estado de México, Querétaro, Puebla
-            </p>
-            <p>
-              <i class="fa-brands fa-facebook-square"></i>DEHO-Business-Solutions
-            </p>
+            <div class="col-12 col-md-6">
+              <div class="img-footer">
+                <h3>Comunícate con Nosotros</h3>
+              </div>
+              <a href="mailto:administracion@dehobs.com.mx?Subject=Información">
+                <p>
+                  <i class="fa-solid fa-envelope"></i
+                  >administracion@dehobs.com.mx
+                </p>
+              </a>
+              <a
+                href="https://wa.me/5215522568550?text=Hola%20Dehobs%20,+necesito+más+información"
+                target="__blank"
+              >
+                <p><i class="fa-solid fa-mobile-screen"></i>(55) 2256 8550</p>
+              </a>
+              <a href="tel:+555630296930">
+                <p><i class="fa-solid fa-phone-flip"></i>(55) 2256 8550</p>
+              </a>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>Ciudad de México, Estado
+                de México, Querétaro, Puebla
+              </p>
+              <a
+                href="https://www.facebook.com/DEHO-Business-Solutions-1977868455769820"
+                target="__blank"
+              >
+                <p>
+                  <i class="fa-brands fa-facebook-square"></i
+                  >DEHO-Business-Solutions
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="conatiner-fluid" id="copyright">
+        <div class="conatiner">
+          <div class="row ">
+            <div class="col-12 col-md-6 py-2">
+              <p class="text-center">
+                © Copyright 2020 Deho Business Solutions. Todos los derechos reservados. 
+              </p>
+            </div>
+            <div class="col-12 col-md-6 text-md-end py-2">
+              <p class="text-center">
+                Desarrollado por <a href="https://shake.mx/web.html" target="__blank">Shake</a> 
+              </p>
+            </div>
+            
+          </div>
+        </div>
       </div>
     </footer>
 

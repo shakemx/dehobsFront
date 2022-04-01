@@ -55,9 +55,6 @@ p {
           box-shadow: #5eb12f 0px 0px 2px;
   text-shadow: 2px 2px 4px black; }
 
-@media only screen and (max-width: 540px) {
-  .accion {
-    background-color: rgba(94, 177, 47, 0.2); } }
 .img-nav {
   width: auto;
   height: 100px; }
@@ -65,12 +62,15 @@ p {
 @media only screen and (max-width: 540px) {
   .img-nav {
     height: 55px; } }
+.nav-link {
+  font-size: larger; }
+
 .nav-item:hover {
   background: #5eb12f;
   width: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  opacity: 0.4; }
+  opacity: 0.6; }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("/assets/img/menu.png") !important;
@@ -134,8 +134,8 @@ p {
   height: 100vh;
   filter: opacity(50%);
   -webkit-filter: opacity(50%);
-  -o-object-position: left top;
-     object-position: left top;
+  -o-object-position: center;
+     object-position: center;
   -o-object-fit: cover;
      object-fit: cover; }
 
@@ -154,7 +154,7 @@ p {
 @media only screen and (max-width: 768px) {
   .textoInicio {
     width: auto;
-    top: 20%; }
+    top: 30vh; }
 
   .titulo {
     font-size: 2.5rem; } }
@@ -436,13 +436,43 @@ p {
   text-align: center;
   color: #8c8d8e;
   text-shadow: unset; }
-#contacto input {
-  color: #8c8d8e;
-  text-shadow: unset; }
+#contacto .input-group-text {
+  color: #ffffff;
+  background-color: #5eb12f !important; }
 #contacto .btn-primary {
   color: #ffffff;
   background-color: #5eb12f;
   border-color: #5eb12f; }
+#contacto ::-webkit-input-placeholder {
+  color: #8c8d8e; }
+#contacto :-ms-input-placeholder {
+  color: #8c8d8e; }
+#contacto ::-ms-input-placeholder {
+  color: #8c8d8e; }
+#contacto ::placeholder {
+  color: #8c8d8e; }
+#contacto #g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0; }
+#contacto .gracias {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #5eb12f; }
+#contacto .img-modal {
+  width: 250px; }
+#contacto .ok {
+  font-weight: 700;
+  color: #004aad; }
+#contacto .error {
+  font-weight: 700;
+  color: red; }
 
 footer {
   background-color: #F8F9FA;
@@ -470,5 +500,12 @@ footer {
     margin: 0 10px;
     width: 1.5rem;
     text-align: center; }
+  footer #copyright {
+    background-color: #D1D5DC; }
+    footer #copyright p {
+      color: #ffffff; }
+    footer #copyright a {
+      font-weight: 800;
+      color: #ffffff; }
 
 /*# sourceMappingURL=estilos.css.map */
